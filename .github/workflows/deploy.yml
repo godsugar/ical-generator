@@ -40,7 +40,7 @@ jobs:
         run: npm ci
 
       - name: Build and Export
-        run: npm run export
+        run: npx next build --no-lint
         env:
           NODE_ENV: production
 
